@@ -10,4 +10,4 @@ app.get('/', (req, res) => {
     })
 })
 
-app.listen(3000 || process.env)
+app.listen(process.env.PORT || 3000)
