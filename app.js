@@ -39,15 +39,15 @@ app.post('/', (req, res) => {
     try {
         if (operation_type.includes('/') || operation_type.includes('divide') || operation_type.includes('over')) {
             ans = x / y
-            operation_type = '/'
+            operation_type = 'division'
         }
         else if (operation_type.includes('+') || operation_type.includes('add') || operation_type.includes('plus')) {
             ans = x + y
-            operation_type = '+'
+            operation_type = 'addition'
         }
         else if (operation_type.includes('-') || operation_type.includes('minus') || operation_type.includes('subtract')) {
             ans = x - y
-            operation_type = '-'
+            operation_type = 'subtraction'
         }
         else
             res.send('x has to be an integer, y has to be an integer and the operation type has to be addition, subtraction or division.')
