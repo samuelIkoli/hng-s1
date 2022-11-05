@@ -23,7 +23,7 @@ app.get('/index', (req, res) => {
     res.sendFile(path.join(__dirname, '/index.html'));
 })
 
-app.post('/index', (req, res) => {
+app.post('/', (req, res) => {
     let { x, y, operation_type } = req.body;
     var ans = 0
     console.log('hay')
