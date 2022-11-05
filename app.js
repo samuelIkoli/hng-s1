@@ -19,7 +19,6 @@ app.get('/', (req, res) => {
     })
 })
 
-<<<<<<< HEAD
 app.get('/index', (req, res) => {
     res.sendFile(path.join(__dirname, '/index.html'));
 })
@@ -58,12 +57,9 @@ app.post('/index', (req, res) => {
     res.json({ slackUsername: 'Samuel Ikoli', operation_type, result: ans })
 })
 
-app.listen(3000)
-=======
 const port = process.env.PORT || 3000
 
 app.listen(port, (err) => {
     if (err) console.log("Error in server setup")
     console.log('Serving on port 80')
 });
->>>>>>> refs/remotes/origin/main
